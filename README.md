@@ -7,21 +7,19 @@ stop doing the thing until they return.
 API
 ---------------------
 
-### Syntax
-
     $.stillAlive(callback [, interval] [, immediately] [, wakeEvents])
     $.stillAlive(callback [,options])
 
-#### callback
+### callback
 
 `callback` _(required)_ is the function which will be called periodically.
 
-#### interval
+### interval
 
 `interval` _(optional)_ is the number of milliseconds to elapse between
 executions of `callback`. The default value is **60000** (60 seconds).
 
-#### immediately
+### immediately
 
 `immediately` _(optional)_ must evaluate to a boolean. The default value is
 **true**.
@@ -33,13 +31,13 @@ executions of `callback`. The default value is **60000** (60 seconds).
     milliseconds have elapsed, and subsequently only executes every `interval`
     milliseconds. `callback` **does not** execute upon a wake event.
 
-#### wakeEvents
+### wakeEvents
 
 `wakeEvents` is a string containing all of the [events][] which will set an
 "awake" status and allow `callback` to be executed. The default value is
 **"mousemove mousedown mouseup keydown keyup"**.
 
-#### options
+### options
 
 Options is a list of any combination of the optional arguments in [object
 literal notation][].  Here is an example of explicitly calling `$.stillAlive()`
