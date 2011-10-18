@@ -4,6 +4,8 @@ Still Alive
 Do something periodically. If the user appears to be absent, go to sleep and
 stop doing the thing until they return.
 
+
+
 API
 ---------------------
 
@@ -50,7 +52,9 @@ object literal notation:
       wakeEvents: 'mousemove mousedown mouseup keydown keyup'
     });
 
-Example Usage
+
+
+Examples
 ---------------------
 
 Say I have a function called _update_ defined elsewhere. I want _update_ to be
@@ -86,11 +90,15 @@ adjusting the interval:
     $.stillAlive(update, { interval: 5 });
 
 
+
 Copyright and License
 ---------------------
 
 Copyright © 2011, Justin Force
-Licensed under the 3-clause BSD License
+
+Licensed under the [BSD 3-Clause License][http://www.opensource.org/licenses/BSD-3-Clause]
+
+
 
 [events]:http://api.jquery.com/category/events/ "Events in jQuery"
 [object literal notation]:https://developer.mozilla.org/en/JavaScript/Guide/Values,_Variables,_and_Literals#Object_Literals "Object Literals at Mozilla Developer Network"
