@@ -35,13 +35,13 @@ executions of `callback`. The default value is **60000** (60 seconds).
 
 ### wakeEvents
 
-`wakeEvents` is a string containing all of the [events][] which will set an
+`wakeEvents` _(optional)_ is a string containing all of the [events][] which will set an
 "awake" status and allow `callback` to be executed. The default value is
 **"mousemove mousedown mouseup keydown keyup"**.
 
 ### options
 
-Options is a list of any combination of the optional arguments in [object
+`options` _(optional)_ is a list of any combination of the optional arguments in [object
 literal notation][].  Here is an example of explicitly calling `$.stillAlive()`
 on a function called "glados" (defined elsewhere) with default options in
 object literal notation:
