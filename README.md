@@ -96,7 +96,7 @@ Copyright and License
 
 Copyright © 2011, Justin Force
 
-Licensed under the [BSD 3-Clause License][http://www.opensource.org/licenses/BSD-3-Clause]
+Licensed under the [BSD 3-Clause License](http://www.opensource.org/licenses/BSD-3-Clause)
 
 
 
