@@ -3,7 +3,7 @@
 * http://github.com/sidewaysmilk/still-alive
 *
 * Copyright 2011, Justin Force
-* Licensed under the 3-clause BSD License
+* Licensed under the BSD 3-Clause License
 */
 
 /*jslint browser: true, indent: 2 */
