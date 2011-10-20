@@ -54,10 +54,10 @@
       return (getTime() - lastSeen > (interval + (interval / 2)));
     }
 
-    // set status to awake and update the lastSeen time. If we're waking and
-    // we're supposed to run immediately, execute the callback.
+    // set status to awake and update the lastSeen time, then execute the
+    // callback.
     function wake() {
-      if (!awake && immediately) {
+      if (!awake) {
         callback();
       }
       awake = true;
