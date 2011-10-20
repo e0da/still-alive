@@ -1,5 +1,5 @@
 /*!
-* Still Alive v1.0
+* Still Alive v1.1
 * http://github.com/sidewaysmilk/still-alive
 *
 * Copyright 2011, Justin Force
