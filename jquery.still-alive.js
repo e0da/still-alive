@@ -25,7 +25,8 @@
 
   $.stillAlive = function (callback, interval, immediately, wakeEvents) {
 
-    var args,               // object containing optional arguments
+    var ptr,                // pointer to the interval so it can be cleared from outside
+      args,                 // object containing optional arguments
       awake = true,         // awake status. Are we awake?
       lastSeen = getTime(); // the last time the user was seen (a wake event triggered)
 
@@ -73,7 +74,7 @@
 
     // if enough time has passed without a wake event, sleep. If we happen to
     // be awake, execute the callback.
-    setInterval(function () {
+    ptr = setInterval(function () {
       if (timeToSleep()) {
         sleep();
       }
@@ -86,6 +87,8 @@
     if (immediately) {
       callback();
     }
+
+    return ptr;
   };
 
 }(jQuery));
