@@ -1,6 +1,6 @@
 /*!
 * Still Alive v1.2
-* http://github.com/sidewaysmilk/still-alive
+* http://github.com/justinforce/still-alive
 *
 * Copyright 2011, Justin Force
 * Licensed under the BSD 3-Clause License
